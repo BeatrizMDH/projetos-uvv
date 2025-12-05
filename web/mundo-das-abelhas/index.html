@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mundo das Abelhas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css.min.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <h1><i class="fas fa-bee"></i> Mundo das Abelhas</h1>
+        <button
+          id="toggleTheme"
+          class="theme-toggle"
+          aria-label="Alternar tema"
+          title="Clique para trocar tema"
+        >
+          <i class="fas fa-moon"></i>
+          <span class="toggle-label">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <div class="container">
+        <a href="#sobre">Sobre</a>
+        <a href="#tipos">Tipos de Abelhas</a>
+        <a href="#curiosidades">Curiosidades</a>
+      </div>
+    </nav>
+
+    <main class="container" id="main">
+      <section id="sobre" class="card" aria-labelledby="sobre-title">
+        <h2 id="sobre-title">Sobre as Abelhas</h2>
+        <p>
+          As abelhas são insetos essenciais para o equilíbrio do meio ambiente.
+          Elas são responsáveis pela polinização de grande parte das plantas do
+          planeta, contribuindo para a reprodução vegetal e produção de
+          alimentos. Existem mais de 20 mil espécies de abelhas pelo mundo, com
+          a maioria sendo solitária. Aproximadamente 300 espécies de abelhas sem
+          ferrão são nativas do Brasil.
+        </p>
+      </section>
+
+      <section id="tipos" class="card" aria-labelledby="tipos-title">
+        <h2 id="tipos-title">Tipos de Abelhas</h2>
+        <div class="card-abelha">
+          <div class="card-item">
+            <div class="card-image">
+              <img
+                src="./images/Apis_mellifera_Western_honey_bee.jpg"
+                alt="Abelha Europeia"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Abelha Europeia</h3>
+              <p class="scientific-name"><em>Apis mellifera</em></p>
+              <p class="description">
+                A abelha mais comum e produtora de mel em todo o mundo.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="card-image">
+              <img src="./images/jatai_abelha.jpg" alt="Jataí" />
+            </div>
+            <div class="card-content">
+              <h3>Jataí</h3>
+              <p class="scientific-name"><em>Tetragonisca angustula</em></p>
+              <p class="description">
+                Abelha nativa do Brasil, sem ferrão e muito dócil.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="card-image">
+              <img src="./images/abelha-mandacaia-01.jpg" alt="Mandaçaia" />
+            </div>
+            <div class="card-content">
+              <h3>Mandaçaia</h3>
+              <p class="scientific-name"><em>Melipona quadrifasciata</em></p>
+              <p class="description">
+                Abelha nativa da Mata Atlântica, produz mel de qualidade
+                excepcional.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="card-image">
+              <img src="./images/uruçu_abelha.jpg" alt="Uruçu" />
+            </div>
+            <div class="card-content">
+              <h3>Uruçu</h3>
+              <p class="scientific-name"><em>Melipona scutellaris</em></p>
+              <p class="description">
+                A maior abelha sem ferrão da América Tropical, muito importante
+                para o ecossistema.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="curiosidades"
+        class="card"
+        aria-labelledby="curiosidades-title"
+      >
+        <h2 id="curiosidades-title">Curiosidades</h2>
+        <p>Clique no botão abaixo para descobrir uma curiosidade:</p>
+        <button id="btnCuriosidade" class="btn" type="button">
+          Mostrar curiosidade
+        </button>
+        <p id="curiosidadeTexto" class="curiosidade" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2025 Mundo das Abelhas</small>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
